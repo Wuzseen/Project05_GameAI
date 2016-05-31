@@ -35,9 +35,9 @@ namespace PCGA4.MapElements
         public Tileset Tileset;
 
         [XmlElement(ElementName = "layer", Order = 2)]
-        public Layer Layer1;
+        public Layer Floor;
         [XmlElement(ElementName = "layer", Order = 3)]
-        public Layer Layer2;
+        public WallLayer Walls;
 
         public Map()
         {
@@ -45,8 +45,8 @@ namespace PCGA4.MapElements
             this.Name = "DefaultName";
             properties = new MapProperty[1];
             properties[0] = new MapProperty("name", this.Name);
-            Layer1 = new Layer("Tile Layer 1");
-            Layer2 = new Layer("Tile Layer 2");
+            Floor = new Layer("Tile Layer 1");
+            Walls = new WallLayer("Tile Layer 2");
         }
 
         public Map(string mapName)
@@ -55,8 +55,8 @@ namespace PCGA4.MapElements
             this.Name = mapName;
             properties = new MapProperty[1];
             properties[0] = new MapProperty("name", this.Name);
-            Layer1 = new Layer("Tile Layer 1");
-            Layer2 = new Layer("Tile Layer 2");
+            Floor = new Layer("Tile Layer 1");
+            Walls = new WallLayer("Tile Layer 2");
         }
     }
 }

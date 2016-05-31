@@ -29,7 +29,7 @@ namespace PCGA4
             settings.Indent = true;
 
             
-            XmlWriter writer = XmlWriter.Create("out.xml", settings);
+            XmlWriter writer = XmlWriter.Create("map.xml", settings);
 
             x.Serialize(writer, this._Map, ns);
         }

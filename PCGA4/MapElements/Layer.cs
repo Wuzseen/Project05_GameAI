@@ -29,7 +29,7 @@ namespace PCGA4.MapElements
             }
         }
 
-        void DefaultTiles()
+        protected virtual void DefaultTiles()
         {
             this.tiles = new Tile[TotalLength];
             for(int i = 0; i < TotalLength; i++)
@@ -59,7 +59,7 @@ namespace PCGA4.MapElements
             this.Name = name;
             this.Width = width;
             this.Height = height;
-            this.tiles = new Tile[TotalLength];
+            DefaultTiles();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace PCGA4.MapElements
     {
         public static readonly int FLOOR = 57;
         public static readonly int EMPTY = -1;
-        public static readonly int HALFWALL = 331;
+        public static readonly int HORIZONTALWALL = 331;
         public static readonly int BOTTOMRIGHT = 311;
         public static readonly int BOTTOMLEFT = 271;
         public static readonly int VERTICALWALL = 241;

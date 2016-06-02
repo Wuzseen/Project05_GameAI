@@ -30,10 +30,13 @@ namespace PCGA4
         }
     }
 
-    class A4MapGenerator
+    public class A4MapGenerator
     {
+        public static Random RNG; // sshhhh, a global...
+
         static void Main (string[] args)
         {
+            RNG = new Random(0);
             Generator g = new Generator("GeneratedMap");
             Console.ReadLine(); // wait to exit
         }

@@ -47,6 +47,7 @@ namespace PCGA4.MapElements
             properties[0] = new MapProperty("name", this.Name);
             Floor = new Layer("Tile Layer 1");
             Walls = new WallLayer("Tile Layer 2");
+            Walls.RandomlyGenerate();
         }
 
         public Map(string mapName)
@@ -57,6 +58,7 @@ namespace PCGA4.MapElements
             properties[0] = new MapProperty("name", this.Name);
             Floor = new Layer("Tile Layer 1");
             Walls = new WallLayer("Tile Layer 2");
+            Walls.RandomlyGenerate();
         }
     }
 }

@@ -36,8 +36,10 @@ namespace PCGA4
 
         static void Main (string[] args)
         {
-            RNG = new Random(10);
+            Console.WriteLine("Enter in Seed");
+            RNG = new Random(int.Parse(Console.ReadLine()));
             Generator g = new Generator("GeneratedMap");
+            Console.WriteLine("Finished. Enter to exit");
             Console.ReadLine(); // wait to exit
         }
     }

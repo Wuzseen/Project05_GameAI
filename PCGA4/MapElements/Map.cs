@@ -17,13 +17,13 @@ namespace PCGA4.MapElements
         [XmlAttribute("orientation")]
         public string Orientation = "orthogonal";
         [XmlAttribute("width")]
-        public string Width = "16";
+        public int Width = 42; // needs to be a multiple of 3
         [XmlAttribute("height")]
-        public string Height = "16";
+        public int Height = 42; // needs to be a multiple of 3
         [XmlAttribute("tilewidth")]
-        public string TileWidth = "32";
+        public int TileWidth = 32;
         [XmlAttribute("tileheight")]
-        public string TileHeight = "32";
+        public int TileHeight = 32;
 
         [XmlIgnore]
         public string Name { get; set; }
@@ -45,8 +45,8 @@ namespace PCGA4.MapElements
             this.Name = "DefaultName";
             properties = new MapProperty[1];
             properties[0] = new MapProperty("name", this.Name);
-            Floor = new Layer("Tile Layer 1");
-            Walls = new WallLayer("Tile Layer 2");
+            Floor = new Layer("Tile Layer 1", Width, Height);
+            Walls = new WallLayer("Tile Layer 2", Width, Height);
             Walls.RandomlyGenerate();
         }
 
@@ -56,8 +56,8 @@ namespace PCGA4.MapElements
             this.Name = mapName;
             properties = new MapProperty[1];
             properties[0] = new MapProperty("name", this.Name);
-            Floor = new Layer("Tile Layer 1");
-            Walls = new WallLayer("Tile Layer 2");
+            Floor = new Layer("Tile Layer 1", Width, Height);
+            Walls = new WallLayer("Tile Layer 2", Width, Height);
             Walls.RandomlyGenerate();
         }
     }

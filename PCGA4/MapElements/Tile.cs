@@ -14,6 +14,7 @@ namespace PCGA4.MapElements
     {
         public static readonly int FLOOR = 57;
         public static readonly int EMPTY = -1;
+        public static readonly int NORMALWALL = 211;
         public static readonly int HORIZONTALWALL = 331;
         public static readonly int BOTTOMRIGHT = 311;
         public static readonly int BOTTOMLEFT = 271;
@@ -22,6 +23,7 @@ namespace PCGA4.MapElements
         public static readonly int HORIZONTALSPIKE = 332;
         public static readonly int TOPRIGHT = 302;
         public static readonly int TOPLEFT = 261;
+        public static readonly int DOOR = 40;
 
         [XmlAttribute("gid")]
         public int GID;

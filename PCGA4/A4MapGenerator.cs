@@ -36,7 +36,7 @@ namespace PCGA4
 
         static void Main (string[] args)
         {
-            RNG = new Random(0);
+            RNG = new Random(10);
             Generator g = new Generator("GeneratedMap");
             Console.ReadLine(); // wait to exit
         }

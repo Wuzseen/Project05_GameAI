@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Kruskal\Edge.cs" />
+    <Compile Include="Kruskal\Graph.cs" />
+    <Compile Include="Kruskal\Kruskal.cs" />
+    <Compile Include="Kruskal\Point.cs" />
+    <Compile Include="Kruskal\Subset.cs" />
     <Compile Include="MapElements\Image.cs" />
     <Compile Include="MapElements\Layer.cs" />
     <Compile Include="MapElements\Map.cs" />
@@ -60,9 +65,7 @@
   <ItemGroup>
     <Content Include="exampleMap.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Kruskal\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
